@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Notepen';
+  src: url('fonts/Notepen.ttf');
+}
+@keyframes wiggle {
+   0% { transform: rotate(-10deg); }
+   50% { transform: rotate(10deg); }
+   100% { transform: rotate(-10deg); }
+}
+html {
+    background: url('../img/wallpaper.png') center center no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.centerblock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.topnav {
+    text-align: center;
+    padding: 20px 1px;
+}
+
+h1.wiggle {
+  display: inline-block;
+  animation: wiggle 10s infinite;
+}
+h1, h2, h3, ul, p, a { font-family: 'Notepen', 'Georgia', serif;}
+h1 {
+    font-size: 100px;
+    line-height: 1.4;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 300;
+}
+a {
+    font-size: 40px;
+}
+ /* unvisited link */
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #6693d2;
+}
+
+/* selected link */
+a:active {
+    color: #6693d2;
+    text-decoration: underline;
+} 
+
+a.current:link, a.current:visited {
+  color: #6693d2;
+} 
