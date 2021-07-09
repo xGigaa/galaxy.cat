@@ -29,12 +29,6 @@ html {
     transform: translate(-50%, -50%);
 }
 
-.topnav {
-    font-family: 'Electroharmonix', 'Georgia', serif;
-    text-align: center;
-    font-size: 1.6vw;
-}
-
 h2, h3, ul, p  { 
     font-family: 'bitxmap', 'Georgia', serif;
     color: white;
